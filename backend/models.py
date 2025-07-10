@@ -9,11 +9,10 @@ class Task(BaseModel):
 class TaskUpdate(BaseModel):
     title: Optional[str] = None
     description: Optional[str] = None
-    competed: Optional[bool] = None
+    completed: Optional[bool] = None
 
 class TaskResponse(BaseModel):
     id: str
     title: str
-    description: bool
+    description: str
     completed: bool
-    
